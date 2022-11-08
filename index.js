@@ -30,6 +30,10 @@ true
 //     duration: 3
 // })
 
+//We can always use a function for the "start:" and "end:" properties.
+
+//endTrigger: the position where the trigger ends
+//scrub: 1 or true - plays the animation reverse on scrolling up.
 gsap.to((".c"),{
     scrollTrigger: {
         trigger: ".c",
