@@ -1,3 +1,16 @@
+body{
+    overflow-x: hidden;
+    overscroll-behavior: none;
+}
+
 .navbar{
     background-color: rgb(239, 239, 30);
+}
+
+.slider{
+  overscroll-behavior: none;
+  width: 600%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
 }
