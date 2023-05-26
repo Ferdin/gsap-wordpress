@@ -1,45 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Blob Animation</title>
+  <style>
+    svg {
+      width: 400px;
+      height: 400px;
+    }
+    path {
+      fill: blue;
+    }
+  </style>
 </head>
-<body style="background-color: black; height: 3000px;">
-    <div style ="background-color: darkgrey;
-    width: 150px;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;" class="a">
-        <span>Object 1</span>
-    </div>
+<body>
+  <svg viewBox="0 0 400 400">
+    <path id="blob" d=""></path>
+  </svg>
 
-    <div style ="background-color: rgb(73, 182, 40);
-    width: 150px;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50%;
-    " class="b">
-        <span>Object 2</span>
-    </div>
-
-    <div style ="background-color: rgb(144, 89, 247);
-    width: 150px;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top:50%;
-    " class="c">
-        <span>Object 3</span>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
-    <script src="index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
