@@ -2,7 +2,7 @@
 
 body {
     /* background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%); */
-    background-image: linear-gradient( 180.7deg,  rgba(0,213,255,1) 2.5%, rgba(79,255,255,1) 97.7% );
+    background-image: linear-gradient(180.7deg, var(--gradient-color-1) 2.5%, var(--gradient-color-2) 97.7%);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -26,9 +26,10 @@ body {
 }
 
 #userInput{
+    font-family: 'Poppins', sans-serif;
     background: none;
     height: 7vh;
-    border: 1px solid rgb(168, 168, 219);
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 50px;
     padding: 0 10px;
     width: 60vw;
@@ -37,4 +38,11 @@ body {
 #icon{
     margin: 10px;
     cursor: pointer;
+}
+
+.chat-response{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
