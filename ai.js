@@ -3,7 +3,7 @@ let body = document.querySelector('body');
 let hero = document.querySelector('.hero');
 let userInput = document.querySelector('#userInput');
 
-//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
+//API
 //https://rapidapi.com/serg.osipchuk/api/ApiAI/
 
 boltBtn.addEventListener("mouseover", () => {
@@ -54,7 +54,7 @@ boltBtn.addEventListener("click", () => {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': 'Bearer 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'
+           // 'Authorization': 'Bearer API'
         },
         body: JSON.stringify({
             prompt: userInput,
