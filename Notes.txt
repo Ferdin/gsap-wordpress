@@ -3,3 +3,15 @@
 > Some important GSAP Utility classes
  - selector -> https://greensock.com/docs/v3/GSAP/UtilityMethods/selector()
  - clamp() 
+
+
+
+ Some websites to refer
+ https://webxr-sneakers.lusion.co/
+
+ WebXR
+ https://immersiveweb.dev/
+
+ https://aframe.io/
+
+ https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API/Fundamentals
