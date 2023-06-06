@@ -2,6 +2,40 @@ let boltBtn = document.querySelector('#icon');
 let body = document.querySelector('body');
 let hero = document.querySelector('.hero');
 let userInput = document.querySelector('#userInput');
+let dots = gsap.utils.toArray('.dot');
+
+let mm = gsap.matchMedia();
+
+mm.add("(min-width: 800px)", () => {
+
+});
+
+const totalDots = dots.length;
+
+function animateDots() {
+    const tl = gsap.timeline({ repeat: -1 });
+  
+    tl.to(dots, {
+      y: -15,
+      stagger: {
+        each: 0.1,
+      },
+    })
+    tl.to(dots, {
+      y: 0,
+      stagger: {
+        each: 0.1,
+      },
+    },
+    "-=.5"
+    );
+  
+    return tl;
+  }
+  
+  animateDots();
+  
+
 
 //API
 //https://rapidapi.com/serg.osipchuk/api/ApiAI/
