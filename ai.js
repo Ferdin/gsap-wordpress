@@ -29,11 +29,17 @@ function animateDots() {
     },
     "-=.5"
     );
+    tl.to(dots, {
+        delay: .5
+    })
   
     return tl;
   }
+
+  let master = gsap.timeline({ });
+
+  master.add(animateDots)
   
-  animateDots();
   
 
 
