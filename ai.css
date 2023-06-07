@@ -50,16 +50,21 @@ body {
 }
 
 .loading{
-    margin-top: 50px;
+    margin: 50px auto;
     display: flex;
     justify-content: center;
     flex-direction: row;
     gap: 8px;
+    background-color: black;
+    width: 50%;
+    height: 30%;
+    border-radius: 30px;
 }
 
 .dot{
+    margin-top:30%;
     height: 8px;
     width: 8px;
-    background-color: black;
+    background-color: white;
     border-radius: 10px;
 }
