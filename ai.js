@@ -4,6 +4,8 @@ let hero = document.querySelector('.hero');
 let userInput = document.querySelector('#userInput');
 let dots = gsap.utils.toArray('.dot');
 let loading = document.querySelector('.loading');
+let blob = document.querySelector('.blob');
+const video = document.querySelector('.video');
 
 let mm = gsap.matchMedia();
 
@@ -131,3 +133,28 @@ boltBtn.addEventListener("click", () => {
         console.error('Error:', error);
     });
 });
+
+gsap.to(blob, {
+    borderRadius: '48% 52% 68% 32% / 42% 28% 72% 58%',
+  duration: 4, // Animation duration in seconds
+  keyframes: [
+    { borderRadius: '57% 43% 49% 51% / 55% 71% 29% 45', offset: 0 },
+    { borderRadius: '48% 52% 41% 59% / 66% 37% 63% 34%', offset: 0.05 },
+    { borderRadius: '69% 31% 71% 29% / 67% 31% 69% 33%', offset: 0.1 },
+    { borderRadius: '60% 40% 71% 29% / 63% 65% 35% 37%', offset: 0.15 },
+    { borderRadius: '61% 39% 51% 49% / 57% 58% 42% 43%', offset: 0.2 },
+    { borderRadius: '66% 34% 25% 75% / 47% 30% 70% 53%', offset: 0.25 },
+    { borderRadius: '48% 52% 68% 32% / 42% 28% 72% 58%', offset: 0.3 },
+    { borderRadius: '32% 68% 38% 62% / 65% 60% 40% 35%', offset: 0.35 },
+    { borderRadius: '75% 25% 47% 53% / 49% 53% 47% 51%', offset: 0.4 },
+  ],
+  repeat:-1,
+  yoyo: true
+});
+
+video.addEventListener('load', () => {
+    const playButton = video.contentDocument.querySelector('.ytp-large-play-button');
+    if (playButton) {
+      playButton.style.display = 'none';
+    }
+  });

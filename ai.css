@@ -7,7 +7,51 @@ body {
     background-size: cover;
     height: 100vh;
 }
+.video-container {
+    position: relative;
+    width: 200px; /* Adjust the width and height according to your video size */
+    height: 200px;
+  }
+  
+  .blob {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%;
+  }
+  
+  .video {
+    position: relative;
+    z-index: 1;
+  }
+  
 
+.video-wrapper {
+    position: relative;
+    width: 560px; /* Set the width and height according to your desired video dimensions */
+    height: 315px;
+  }
+  
+  .video-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black; /* Change the color as needed */
+    clip-path: url(".blob"); /* Reference the ID of the SVG blob shape */
+  }
+  
+  .video {
+    position: relative;
+    z-index: 1; /* Ensure the video is stacked above the mask */
+    width: 100%;
+    height: 100%;
+  }
+  
 
 .hero{
     font-family: 'Poppins', sans-serif;
