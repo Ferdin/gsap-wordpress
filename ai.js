@@ -3,6 +3,7 @@ let body = document.querySelector('body');
 let hero = document.querySelector('.hero');
 let userInput = document.querySelector('#userInput');
 let dots = gsap.utils.toArray('.dot');
+let loading = document.querySelector('.loading');
 
 let mm = gsap.matchMedia();
 
@@ -46,6 +47,14 @@ function animateDots() {
 //API
 //https://rapidapi.com/serg.osipchuk/api/ApiAI/
 
+gsap.from(loading, {
+    scale:0,
+    transformOrigin:"top right",
+    ease: "back.out(1.7)",
+    rotation: 70
+});
+
+
 boltBtn.addEventListener("mouseover", () => {
     gsap.to(boltBtn, {
         rotation: 180,
@@ -60,6 +69,12 @@ boltBtn.addEventListener("mouseover", () => {
     });
     gsap.to(userInput,{
         borderColor: "rgb(255 255 255)"
+    });
+    gsap.to(loading, {
+        background: "white"
+    });
+    gsap.to(dots, {
+        background: "black"
     });
 });
 
@@ -77,6 +92,12 @@ boltBtn.addEventListener("mouseleave", () => {
     });
     gsap.to(userInput,{
         borderColor: "rgb(0, 0, 0)"
+    });
+    gsap.to(loading, {
+        background: "black"
+    });
+    gsap.to(dots, {
+        background: "white"
     });
 });
 
