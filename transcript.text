@@ -1,0 +1,11 @@
+After a series of lectures about the fundamentals about GSAP.
+We are no going to build an awesome project call the AI Chat.
+
+This project is about a chat system that will respond according to 
+input the that we give. The idea is to animate the interface 
+based on certain events, for instance when we hover or click on 
+this cool bolt button, the backgrond will be changed. We will 
+implement loading animation while we wait for the response 
+from the API.
+
+And much more.

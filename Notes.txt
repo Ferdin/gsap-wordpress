@@ -1,6 +1,7 @@
-> Match Media 
-> Set()
-> Some important GSAP Utility classes
+ gsap.registerEffect()
+ https://greensock.com/docs/v3/GSAP/gsap.registerEffect()
+
+ Some important GSAP Utility classes
  - selector -> https://greensock.com/docs/v3/GSAP/UtilityMethods/selector()
  - clamp() 
 
@@ -23,3 +24,9 @@
  interactive e-commerce website, AI Chat, Animated website, convert your awesome website to wordpress
 
  products colorful, change background according to its color.
+
+This is a powerful AI tool
+ https://cloud.google.com/blog/products/ai-machine-learning/vertex-ai-model-garden-and-generative-ai-studio
+
+This is a great screen recorder
+ https://obsproject.com/
