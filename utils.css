@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.box{
+    transform-origin: left;
+    height: 50px;
+    width: 50px;
+}
+
+.black{
+    background-color: black;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.green{
+    background-color: green;
+}
+
+.grey{
+    background-color: grey;
+}
+
+.yellow{
+    background-color: yellow;
+}
