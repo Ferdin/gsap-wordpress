@@ -11,17 +11,24 @@
 
 .item {
     display: flex;
-    flex-direction: column; /* Stack children vertically */
-     /* Center items horizontally */
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center; /* Align items vertically to the center */
 }
 
 span {
     font-family: 'Inter';
     font-weight: 800;
     color: white;
-    margin-bottom: 10px; /* Add margin at the bottom of the span */
+    margin-bottom: 10px;
 }
 
 button {
-    /* Add button styling here */
+    background-color: white;
+    color: red;
+    font-family: 'Inter';
+    font-weight: 800;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
 }
