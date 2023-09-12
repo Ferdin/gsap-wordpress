@@ -1,0 +1,11 @@
+{
+    "__metadata": {
+        "type": "SP.Publishing.SitePage"
+    },
+    "LayoutWebpartsContent": "[{\"id\":\"cbe7b0a9-3504-44dd-a3a3-0e5cacd07788\",\"instanceId\":\"cbe7b0a9-3504-44dd-a3a3-0e5cacd07788\",\"title\":\"\\n      Title area\\n    \",\"description\":\"\\n      Title area description\\n    \",\"audiences\":[],\"serverProcessedContent\":{\"htmlStrings\":{},\"searchablePlainTexts\":{},\"imageSources\":{\"imageSource\":\"@{triggerOutputs()?['body/ImageURL']}\"},\"links\":{},\"customMetadata\":{\"imageSource\":{}}},\"dataVersion\":\"1.4\",\"properties\":{\"imageSourceType\":2,\"title\":\"@{triggerOutputs()?['body/Title']}\",\"textAlignment\":\"Left\",\"showPublishDate\":false,\"authors\":[],\"showTopicHeader\":false,\"authorByline\":[],\"layoutType\":\"CutInShape\",\"topicHeader\":\"\",\"enableGradientEffect\":true,\"isDecorative\":true,\"hasTitleBeenCommitted\":false},\"containsDynamicDataSource\":false,\"reservedHeight\":306}]",
+    "AuthorByline": [],
+    "TopicHeader": "",
+    "Title": "@{triggerOutputs()?['body/Title']}",
+    "BannerImageUrl": "@{triggerOutputs()?['body/ImageURL']}",
+    "CanvasContent1": "[{\"controlType\":4,\"id\":\"1212fc8d-dd6b-408a-8d5d-9f1cc787efbb\",\"position\":{\"controlIndex\":2,\"sectionIndex\":1,\"sectionFactor\":12,\"zoneIndex\":1,\"layoutIndex\":1},\"addedFromPersistedData\":true,\"innerHTML\":\"<p>@{triggerOutputs()?['body/Content']}</p>\"},{\"controlType\":0,\"pageSettingsSlice\":{\"isDefaultDescription\":true,\"isDefaultThumbnail\":true,\"isSpellCheckEnabled\":true,\"globalRichTextStylingVersion\":0,\"rtePageSettings\":{\"contentVersion\":5},\"isEmailReady\":false}}]"
+}

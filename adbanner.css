@@ -1,19 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
+.container {
+    padding: 10px;
+}
+
 .ad-container {
     display: flex;
-    width: 600px;
+    width: 80%;
     height: 140px;
     background-color: red;
     padding: 20px;
     gap: 10%;
+    position: relative; /* Add position relative to allow absolute positioning */
+    overflow: hidden;
 }
 
 .item {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    justify-content: center; /* Align items vertically to the center */
+    justify-content: center;
 }
 
 span {
@@ -31,4 +36,32 @@ button {
     border: none;
     padding: 10px;
     cursor: pointer;
+}
+
+.ad-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%; /* Position the line in the middle horizontally */
+    width: 7px; /* Adjust the width of the line as needed */
+    background-color: white; /* Color of the line */
+    transform: translateX(-50%) rotate(15deg); /* Tilt the line slightly */
+    height: 105%; /* Ensure the line covers the entire height */
+    margin-top: -5px;
+    z-index: 999;
+}
+
+.ad-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 135%;
+    margin-top: -5%;
+    bottom: 0;
+    left: 50%;
+    right: 0; /* Position this pseudo-element on the right side */
+    width: 55%; /* Cover the second half of the ad-container */
+    background-color: black; /* Color for the second half */
+    transform: rotate(15deg); /* Apply the same tilt angle as the white line */
 }
