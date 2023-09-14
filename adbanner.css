@@ -38,21 +38,20 @@ button {
     cursor: pointer;
 }
 
-.ad-container::before {
-    content: "";
+.strip {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 50%; /* Position the line in the middle horizontally */
-    width: 2%; /* Adjust the width of the line as needed */
-    background-color: white; /* Color of the line */
-    transform: translateX(-50%) rotate(15deg); /* Tilt the line slightly */
-    height: 120%; /* Ensure the line covers the entire height */
-    margin-top: -5px;
+    left: 50%; /* Position the strip in the middle horizontally */
+    width: 20px; /* Adjust the width of the strip as needed */
+    background-color: white; /* Color of the strip */
+    transform: translateX(-50%) rotate(15deg); /* Tilt the strip slightly */
+    height: 120%; /* Ensure the strip covers the entire height */
+    margin-top: -6px;
     z-index: 999;
 }
 
-.ad-container::after {
+.black-bg {
     content: "";
     position: absolute;
     top: 0;
@@ -76,4 +75,8 @@ button {
     color: white;
     font-size: 24px; /* Adjust the font size as needed */
     z-index: 1000; /* Place the text above the black background */
+}
+
+.image{
+    display: none;
 }
