@@ -1,0 +1,1 @@
+let strip = document.querySelector(".ad-container::before");

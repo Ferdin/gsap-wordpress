@@ -21,7 +21,7 @@
     justify-content: center;
 }
 
-span {
+.ad-text {
     font-family: 'Inter';
     font-weight: 800;
     color: white;
@@ -64,4 +64,16 @@ button {
     width: 55%; /* Cover the second half of the ad-container */
     background-color: black; /* Color for the second half */
     transform: rotate(15deg); /* Apply the same tilt angle as the white line */
+}
+
+.text-overlay {
+    text-align: center;
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 75%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the text perfectly */
+    font-family: 'Inter';
+    color: white;
+    font-size: 24px; /* Adjust the font size as needed */
+    z-index: 1000; /* Place the text above the black background */
 }
