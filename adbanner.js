@@ -1,16 +1,9 @@
 let strip = document.querySelector(".strip");
 let blackBG = document.querySelector(".black-bg");
 let image = document.querySelector(".image");
-let texts = gsap.utils.toArray('.discount')
-
-// function removeElement(element) {
-//     if (typeof(element) === "string") {
-//       element = document.querySelector(element);
-//     }
-//     return function() {
-//       element.parentNode.removeChild(element);
-//     };
-// }
+let texts = gsap.utils.toArray('.discount');
+let dealBtn = document.querySelector('.deals-btn');
+let adContainer = document.querySelector('.ad-container');
 
 gsap.set(image, {
     display: 'none',
@@ -18,6 +11,7 @@ gsap.set(image, {
 })
 
 gsap.set(texts, {
+    display: 'none',
     opacity: 0
 })
 
@@ -44,6 +38,7 @@ tl.to(blackBG, {
 }, "-=2");
 
 tl.to(texts, {
+    display: 'inline',
     opacity: 1,    
 });
 
@@ -55,14 +50,40 @@ tl.to(texts, {
     opacity: 0
 })
 
+tl.to(texts, {
+    display: 'none'
+})
+
 tl.to(image, {
     display: 'block',
+    y: 15,
     scaleY: 1
 })
 
+dealBtn.addEventListener('mouseover', (event) => {
+    let tl2 = gsap.timeline();
 
-// let tl2 = gsap.timeline();
+    tl2.to(strip,{
+        rotation: 15,
+        ease: "power3.inOut",
+        duration: 1
+    });
+    
+    tl2.to(blackBG, {
+        rotation: 15,
+        top: "-10%",
+        left: "50%",
+        ease: "power3.inOut",
+        duration: 1
+    }, "-=1");
 
-// tl2.to(image, {
-//     display: 'block'
-// })
+    gsap.to(adContainer, {
+        backgroundColor: "purple"
+    });
+
+    gsap.to(dealBtn, {
+        color: 'purple'
+    })
+
+    tl2.play();
+});
