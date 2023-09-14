@@ -44,10 +44,10 @@ button {
     top: 0;
     bottom: 0;
     left: 50%; /* Position the line in the middle horizontally */
-    width: 7px; /* Adjust the width of the line as needed */
+    width: 2%; /* Adjust the width of the line as needed */
     background-color: white; /* Color of the line */
     transform: translateX(-50%) rotate(15deg); /* Tilt the line slightly */
-    height: 105%; /* Ensure the line covers the entire height */
+    height: 120%; /* Ensure the line covers the entire height */
     margin-top: -5px;
     z-index: 999;
 }
@@ -56,10 +56,10 @@ button {
     content: "";
     position: absolute;
     top: 0;
-    height: 135%;
+    height: 200%;
     margin-top: -5%;
     bottom: 0;
-    left: 50%;
+    left: 48%;
     right: 0; /* Position this pseudo-element on the right side */
     width: 55%; /* Cover the second half of the ad-container */
     background-color: black; /* Color for the second half */
