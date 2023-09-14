@@ -76,7 +76,11 @@ button {
     font-size: 24px; /* Adjust the font size as needed */
     z-index: 1000; /* Place the text above the black background */
 }
-
+/* 
 .image{
     display: none;
+} */
+
+.image{
+    margin: 0 auto
 }
