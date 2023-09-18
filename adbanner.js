@@ -15,7 +15,7 @@ gsap.set(texts, {
     opacity: 0
 })
 
-let tl = gsap.timeline();
+let tl = gsap.timeline({repeat: -1, yoyo: true});
 
 tl.from(strip, {
     scaleY: 0,
@@ -87,3 +87,32 @@ dealBtn.addEventListener('mouseover', (event) => {
 
     tl2.play();
 });
+
+dealBtn.addEventListener('mouseleave', (event) => {
+    let tl3 = gsap.timeline();
+
+    tl3.to(strip,{
+        rotation: -15,
+        ease: "power3.inOut",
+        duration: 1
+    });
+    
+    tl3.to(blackBG, {
+        rotation: -15,
+        top: "-10%",
+        left: "52%",
+        ease: "power3.inOut",
+        duration: 1
+    }, "-=1");
+
+    gsap.to(adContainer, {
+        backgroundColor: "red"
+    });
+
+    gsap.to(dealBtn, {
+        color: 'red'
+    })
+
+    tl3.play();
+});
+
