@@ -14,13 +14,13 @@ body{
 }
 
 .pacifico-regular {
-    font-family: "Pacifico", cursive;
+    font-family: "Roboto Slab", cursive;
     font-weight: 400;
     font-style: normal;
   }
 
 .main-heading{
-    font-size: 24px;
+    font-size: 300%;
 }
 
 .text-centering{
@@ -97,6 +97,15 @@ body{
 }
 
 .main-news-image img {
-    max-width: 100%; /* Ensure image doesn't overflow container */
+    max-width: 50%; /* Ensure image doesn't overflow container */
     display: block; /* Remove extra space below image */
+}  
+
+.hero{
+    padding: 10%;
+}
+
+.dn-card{
+    background: white;
+    padding: 65px;
 }
