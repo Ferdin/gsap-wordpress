@@ -14,13 +14,7 @@ body {
   }
   
   .blob {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%;
+    clip-path: circle(50%);
   }
   
   .video {

@@ -1,0 +1,22 @@
+
+
+body{
+    /* Source: https://cssgradient.io/*/
+    background: rgb(255,97,29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Optional: Centers images horizontally */
+}
+
+.img-brg{
+    width: 50%;
+    margin: 1px 0;
+}

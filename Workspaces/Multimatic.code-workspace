@@ -1,0 +1,121 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../WP Integration"
+		},
+		{
+			"path": "../../WP Integration/MultiNEWS"
+		},
+		{
+			"path": "../../Multinet/lobby-display"
+		},
+		{
+			"path": "../../WP Integration/React_demo"
+		},
+		{
+			"path": "../../WP Integration/another_approach"
+		},
+		{
+			"path": "../../React/demo"
+		},
+		{
+			"path": "../../Power Apps/JS"
+		},
+		{
+			"path": "../../Multinet/Multinet2012"
+		},
+		{
+			"path": "../../Heroku/cft-2022-next-update"
+		},
+		{
+			"path": "../../Next"
+		},
+		{
+			"path": "../../../Local Sites/multinet/app/public"
+		},
+		{
+			"path": "../../GitHub/multi-stage"
+		},
+		{
+			"path": "../../Projects/PDF Printer"
+		},
+		{
+			"path": "../../GitHub/dev1multi"
+		},
+		{
+			"path": "../../GitHub/multi-cn-dev"
+		},
+		{
+			"path": "../../GitHub/multimatic-de-development"
+		},
+		{
+			"path": "../../GitHub/development-multimatic-cft"
+		},
+		{
+			"path": "../../GitHub/multi-cft-stage"
+		},
+		{
+			"path": "../../GitHub/multi-cn-stage"
+		},
+		{
+			"path": "../../GitHub/multi-de-stage"
+		},
+		{
+			"path": "../../../Local Sites/mm-career"
+		},
+		{
+			"path": "../../../Local Sites/multinet"
+		},
+		{
+			"path": "../../../Local Sites/tricap-production/app/public/wp-content"
+		},
+		{
+			"path": "../../../Local Sites/career-production/app/public/wp-content"
+		},
+		{
+			"path": "../../../Local Sites/multimatic-production/app/public"
+		},
+		{
+			"path": "../../../Local Sites/cft-multimatic-production"
+		},
+		{
+			"path": "../../../Local Sites/quikblade"
+		},
+		{
+			"path": "../../../Local Sites/tricapnew"
+		},
+		{
+			"path": "../../../Local Sites/tricap-production"
+		},
+		{
+			"path": "../../../Local Sites/multimatic-race-dampers"
+		},
+		{
+			"path": "../../Multimatic Race Dampers"
+		},
+		{
+			"path": "../../GitHub/multi-rd-stage"
+		},
+		{
+			"path": "../../Next/next-2024"
+		},
+		{
+			"path": "../../Python/Django"
+		},
+		{
+			"path": "../../Python/Python-playground"
+		},
+		{
+			"path": "../../Trends"
+		},
+		{
+			"path": "../../../Local Sites/blocktheme"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "PDF Printer"
+	}
+}

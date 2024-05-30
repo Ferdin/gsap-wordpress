@@ -1,5 +1,7 @@
 const cursor = document.querySelector('.circle');
-let image = document.querySelector('.headset')    
+let image = document.querySelector('.headset');
+gsap.registerPlugin(ScrollTrigger) 
+    
 document.addEventListener('mousemove', (e) => {
     gsap.to(cursor, {
     duration: 1.5,
