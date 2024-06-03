@@ -113,6 +113,9 @@
 		},
 		{
 			"path": "../../../Local Sites/blocktheme"
+		},
+		{
+			"path": "../../TensorFlow/tfjs-examples-master/tfjs-examples-master/getting-started"
 		}
 	],
 	"settings": {
