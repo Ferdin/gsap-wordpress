@@ -43,3 +43,18 @@ tl.from(imgElements.item(0), {
     ease: "expo.out",
     duration: 1.5
 }, "-=1.4");
+
+tl2 = gsap.timeline({repeat: -1});
+
+tl2.to(".dot", {
+    y: 35,
+    duration: 1.5
+});
+
+tl2.to(".dot", {
+    opacity: 0
+})
+
+tl2.to(".dot", {
+    duration: 1
+})
