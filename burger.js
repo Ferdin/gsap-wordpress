@@ -2,6 +2,15 @@ var imgElements = document.querySelectorAll('.img-brg');
 
 var tl = gsap.timeline();
 
+var fl_string = document.querySelector(".main-heading");
+
+gsap.from(fl_string, {
+    y: 100,
+    ead: "expo.out",
+    duration: 1.1,
+    opacity: 0
+})
+
 tl.from(imgElements.item(6), {
     y: -100,
     ease: "expo.out",
@@ -58,3 +67,4 @@ tl2.to(".dot", {
 tl2.to(".dot", {
     duration: 1
 })
+
